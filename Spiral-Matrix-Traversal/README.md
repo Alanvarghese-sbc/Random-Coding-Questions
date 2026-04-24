@@ -68,8 +68,9 @@ Print all elements of the matrix in **spiral order** (space-separated).
 ```python
 matrix = [values[i*m:(i+1)*m] for i in range(n)]
 👉 This slices the list into rows of size m
+```
 
-Step 3: Spiral Traversal
+### Step 3: Spiral Traversal
 Use 4 boundaries:
 
 top → first row
@@ -103,7 +104,8 @@ Index errors
 
 Issues in single row/column cases
 
-💻 Python Code
+### 💻 Python Code
+```
 data = list(map(int, input().split()))
 
 n = data[0]
@@ -143,12 +145,15 @@ while top <= bottom and left <= right:
         left += 1
 
 print(*result)
-⏱ Time & Space Complexity
+
+```
+
+### ⏱ Time & Space Complexity
 Time Complexity: O(n × m)
 
 Space Complexity: O(n × m) (for result list)
 
-🔥 Key Concepts
+### 🔥 Key Concepts
 Matrix traversal
 
 List slicing
@@ -157,25 +162,14 @@ Boundary shrinking
 
 Input parsing (single-line format)
 
-⚠️ Edge Cases
+### ⚠️ Edge Cases
 Single row (1 x m)
 
 Single column (n x 1)
 
 Invalid input length (len(values) != n*m)
 
-💡 Tips (Placements / Coding Tests)
-Always verify input format
-
-Practice both:
-
-Row-wise input
-
-Single-line input
-
-Be careful with boundary updates
-
-🚀 Related Problems
+### 🚀 Related Problems
 Reverse Spiral Traversal
 
 Boundary Traversal
@@ -184,5 +178,5 @@ Rotate Matrix 90°
 
 Zigzag Traversal
 
-📌 Author
+### 📌 Author
 Alan Varghese

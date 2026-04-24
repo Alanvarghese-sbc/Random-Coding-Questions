@@ -18,7 +18,6 @@ matrix = [
 ]
 
 
-
 top = 0
 bottom = n - 1
 left = 0
