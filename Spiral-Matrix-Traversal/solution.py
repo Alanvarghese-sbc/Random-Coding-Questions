@@ -1,10 +1,23 @@
-n,m = map(int, input().split())
+# n,m = map(int, input().split())
 
-matrix = []
+# matrix = []
 
-for i in range(n):
-    row = list(map(int, input().split()))
-    matrix.append(row)
+# for i in range(n):
+#     row = list(map(int, input().split()))
+#     matrix.append(row)
+
+data = list(map(int, input().split()))
+n = data[0]
+m = data[1]
+
+values = data[2:]
+
+matrix = [
+    values[i * m:(i + 1) * m]
+    for i in range(n)
+]
+
+
 
 top = 0
 bottom = n - 1
